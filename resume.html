@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advaith Gundu - Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #333;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.6in;
+            background: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 24pt;
+            font-weight: bold;
+            margin-bottom: 4pt;
+        }
+
+        .header .subtitle {
+            font-size: 10pt;
+            margin-bottom: 6pt;
+        }
+
+        .header .contact {
+            font-size: 10pt;
+            margin: 2pt 0;
+        }
+
+        .contact a {
+            color: #333;
+            text-decoration: none;
+            font-family: 'Courier New', monospace;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #333;
+            margin: 20px 0;
+        }
+
+        /* Legacy sections (Skills, Activities) */
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-bottom: 6pt;
+        }
+
+        /* Project styles */
+        .project {
+            margin-bottom: 16px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .project-title {
+            font-weight: bold;
+        }
+
+        .project-date {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .job-company {
+            font-style: italic;
+            margin-bottom: 4px;
+        }
+
+        .bullet-list {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .bullet-list li {
+            margin-bottom: 2px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .bullet-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Skills section */
+        .skills-grid {
+            display: grid;
+            gap: 4px;
+        }
+
+        .skill-category {
+            display: flex;
+            gap: 8px;
+        }
+
+        .skill-label {
+            font-weight: bold;
+            min-width: 120px;
+        }
+
+        .skill-items {
+            flex: 1;
+        }
+
+        /* Project QR code styles */
+        .project-body {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .project-text {
+            flex: 1;
+        }
+
+        .project-qr {
+            flex-shrink: 0;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .project-qr img {
+            width: 50px;
+            height: 50px;
+            display: block;
+            margin: auto;
+            margin-bottom: 3px;
+        }
+
+        .project-qr .qr-label {
+            font-size: 7pt;
+            color: #666;
+            line-height: 1;
+        }
+
+        /* Timeline sections */
+        .timeline-section {
+            margin: 30px 0;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .section-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .section-line {
+            display: flex;
+            align-items: center;
+            height: 2px;
+            background: #333;
+            flex: 1;
+            position: relative;
+        }
+
+        .section-title {
+            position: absolute;
+            left: 10px;
+            font-size: 16pt;
+            font-weight: bold;
+            background: white;
+            padding: 2px 8px;
+            line-height: 1;
+        }
+
+        .section-content {
+            margin-left: 60px;
+            padding-top: 10px;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0.5in;
+            }
+
+            .section-header, .section, .job, .project {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Advaith Gundu</h1>
+        <div class="subtitle">Hopkinton Middle School • Class of 2030</div>
+        <div class="contact">
+            <i class="ti ti-mail"></i> <a href="mailto:advaith@gundu.me">advaith@gundu.me</a> •
+            <i class="ti ti-mail"></i> <a href="mailto:th3geodic@proton.me">th3geodic@proton.me</a>
+        </div>
+        <div class="contact">
+            <i class="ti ti-brand-github"></i> <a href="https://github.com/agundev">agundev</a> •
+            <i class="ti ti-brand-github"></i> <a href="https://github.com/geodic">geodic</a>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- Technical Skills Section -->
+    <div class="timeline-section">
+        <div class="section-header">
+            <div class="section-circle">
+                <i class="ti ti-certificate"></i>
+            </div>
+            <div class="section-line">
+                <div class="section-title">Profile</div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="section">
+                <p style="margin-bottom: 16px; line-height: 1.5;">
+                    Middle school student with 5+ years of programming experience, specializing in machine learning and robotics. Currently developing AI models using reinforcement learning and custom neural network architectures. Led my VEX IQ robotics team to 2nd place at regionals through innovative programming and design approaches. Experienced in systems administration, managing a production home server with containerized services, automated deployments, and mesh networking. Proficient across multiple programming languages from low-level C to high-level Python, with hands-on experience in both hardware integration and software development.
+                </p>
+            </div>
+            
+            <div class="section">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <span class="skill-label">Programming Languages:</span>
+                        <span class="skill-items">Python, Rust, Web Development (JavaScript/TypeScript), C, C++, Shell Scripting, Nix</span>
+                    </div>
+                    <div class="skill-category">
+                        <span class="skill-label">Systems & Tools:</span>
+                        <span class="skill-items">NixOS, Linux, Docker, Git, Network Administration</span>
+                    </div>
+                    <div class="skill-category">
+                        <span class="skill-label">Robotics:</span>
+                        <span class="skill-items">Robot Programming, Mechanical Design, Sensor Integration, Competition Strategy</span>
+                    </div>
+                    <div class="skill-category">
+                        <span class="skill-label">Infrastructure:</span>
+                        <span class="skill-items">Server Management, Automation, Configuration Management, Backup Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Robotics Section -->
+    <div class="timeline-section">
+        <div class="section-header">
+            <div class="section-circle">
+                <i class="ti ti-robot"></i>
+            </div>
+            <div class="section-line">
+                <div class="section-title">Robotics</div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Robotics Team Leader & Lead Programmer</span>
+                    <span class="project-date">2024 – 2025</span>
+                </div>
+                <div class="job-company">Hopkinton Middle School VEX IQ Robotics Team</div>
+                <div class="project-body">
+                    <div class="project-text">
+                        <ul class="bullet-list">
+                            <li>Got 2nd place at regionals while leading a team of 7 students in the VEX IQ Challenge</li>
+                            <li>Programmed complex PID control algorithms for precise autonomous movement and navigation</li>
+                            <li>Developed path planning algorithms to optimize robot performance during autonomous periods</li>
+                            <li>Designed original mechanisms and code from scratch instead of following the copy-culture common in VEX IQ</li>
+                            <li>Iterated through multiple design approaches throughout the competitive season</li>
+                        </ul>
+                    </div>
+                    <div class="project-qr">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://drive.google.com/file/d/1tFADnuQSGtSm3A3Dv_DBdPhD7R44WZCB/view?usp=sharing" alt="Robotics QR">
+                        <div class="qr-label">Robot Videos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hardware Section -->
+    <div class="timeline-section">
+        <div class="section-header">
+            <div class="section-circle">
+                <i class="ti ti-cpu"></i>
+            </div>
+            <div class="section-line">
+                <div class="section-title">Electronics</div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Custom Ratgdo Garage Door Controller</span>
+                    <span class="project-date">2025</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-text">
+                        <ul class="bullet-list">
+                            <li>Designed custom circuit layouts in Fritzing for garage door controller integration</li>
+                            <li>Developed code modifications to enable ESP32-C3 SuperMini compatibility with existing ratgdo firmware</li>
+                            <li>Implemented IoT monitoring and control system using ESPHome framework</li>
+                        </ul>
+                    </div>
+                    <div class="project-qr">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://geodic.vercel.app/blog/ratgdo" alt="Ratgdo QR">
+                        <div class="qr-label">Blog Post</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Infrastructure Section -->
+    <div class="timeline-section">
+        <div class="section-header">
+            <div class="section-circle">
+                <i class="ti ti-server"></i>
+            </div>
+            <div class="section-line">
+                <div class="section-title">Systems</div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Home Server Administrator</span>
+                    <span class="project-date">2023 – Ongoing</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-text">
+                        <ul class="bullet-list">
+                            <li>Architected containerized microservices using Docker Compose for service isolation and management</li>
+                            <li>Deployed Tailscale mesh VPN infrastructure for secure remote access and network segmentation</li>
+                            <li>Orchestrated integration of home automation, media streaming, file synchronization, and monitoring services</li>
+                            <li>Implemented declarative system configuration management using NixOS for reproducible deployments</li>
+                        </ul>
+                    </div>
+                    <div class="project-qr">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://github.com/agundev/phoenix" alt="Homeserver QR">
+                        <div class="qr-label">Config</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Software Section -->
+    <div class="timeline-section">
+        <div class="section-header">
+            <div class="section-circle">
+                <i class="ti ti-code"></i>
+            </div>
+            <div class="section-line">
+                <div class="section-title">Software</div>
+            </div>
+        </div>
+        <div class="section-content">
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">BetaCube AI Solver</span>
+                    <span class="project-date">2025 – Ongoing</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-text">
+                        <ul class="bullet-list">
+                            <li>Developing reinforcement learning models with custom neural network architectures for Rubik's cube solving</li>
+                            <li>Researching and implementing both self-supervised and reinforcement learning training methodologies</li>
+                            <li>Built custom Rubik's cube library from scratch for efficient state representation and move generation</li>
+                        </ul>
+                    </div>
+                    <div class="project-qr">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://github.com/geodic/betacube" alt="BetaCube QR">
+                        <div class="qr-label">GitHub</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Personal Website (Geodic)</span>
+                    <span class="project-date">2025 – Ongoing</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-text">
+                        <ul class="bullet-list">
+                            <li>Built a modern personal website using SvelteKit for my anonymous pseudonym</li>
+                            <li>Implemented a responsive design with clean UI/UX and optimized performance</li>
+                        </ul>
+                    </div>
+                    <div class="project-qr">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://geodic.vercel.app" alt="Geodic Website QR">
+                        <div class="qr-label">Website</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">UCI.js Chess Engine Library</span>
+                    <span class="project-date">2024</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-text">
+                        <ul class="bullet-list">
+                            <li>Developed a JavaScript library for communicating with chess engines using the UCI protocol</li>
+                            <li>Enabled seamless integration between web applications and chess engine backends</li>
+                        </ul>
+                    </div>
+                    <div class="project-qr">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://github.com/geodic/uci.js" alt="UCI.js QR">
+                        <div class="qr-label">GitHub</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Rubik's Cube Color Recognition</span>
+                    <span class="project-date">2020</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-text">
+                        <ul class="bullet-list">
+                            <li>Built a computer vision system to detect and identify colors on a Rubik's cube using camera input</li>
+                            <li>Implemented image processing algorithms to recognize cube state from a live video feed</li>
+                        </ul>
+                    </div>
+                    <div class="project-qr">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://geodic.github.io/old-website/rubix%20cube%20solver/index.html" alt="Cube Recognition QR">
+                        <div class="qr-label">Demo</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Memory Game</span>
+                    <span class="project-date">2020</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-text">
+                        <ul class="bullet-list">
+                            <li>My first real programming project that sparked my passion for software development</li>
+                            <li>Learned fundamental programming concepts like event handling, game logic, and user interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="project-qr">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://geodic.github.io/old-website/memory-game/index.html" alt="Memory Game QR">
+                        <div class="qr-label">Play</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; padding-top: 15px; border-top: 1px solid #eee; font-size: 8pt; color: #888; font-style: italic;">
+        Fun fact: This resume was written in HTML & CSS instead of LaTeX or Word!
+    </div>
+</body>
+</html>
